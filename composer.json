@@ -1,6 +1,6 @@
 {
-    "name": "simplepie/simplepie",
-    "description": "A simple Atom/RSS parsing library for PHP",
+    "name": "totara/simplepie",
+    "description": "Totara fork of simplepie",
     "type": "library",
     "keywords": ["rss", "atom", "feeds"],
     "homepage": "http://simplepie.org/",
@@ -71,5 +71,8 @@
         "fix": "php-cs-fixer fix --verbose --diff",
         "phpstan": "phpstan analyze --memory-limit 512M",
         "test": "phpunit"
+    },
+    "replace": {
+        "simplepie/simplepie": "self.version"
     }
 }
